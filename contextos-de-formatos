@@ -1,0 +1,43 @@
+Contextos de formato: Formato de Contexto de Bloque (BFC)
+Apuntes
+•	BFC (Block Formatting Context) ⇒ Es un mini layout dentro de tu layout
+•	En español significa "Formato de contexto de Bloque"
+•	Se comporta de manera independiente a cómo se comporta el resto de la página
+•	Si bien maneja la estructura interna de un elemento, utilizando position se puede sacar al elemento del flujo normal del documento, haciendo que este se reordene de una forma distinta
+ 
+•	Tenemos un elemento flotante en el ejemplo anterior, en el cual las letras rodean al mismo, pero que pasaría si quitamos ese texto de alrededor
+ 
+•	El layout interno se rompe una vez quitado el mismo
+ 
+•	Si analizamos el elemento, lo que está pasando es que reducimos el contenedor, pero en el exterior se está creando un margen, pero tiene solución
+ 
+•	Si usamos overflow: auto; se arregla
+¿Por qué funciona?
+•	Porque la propiedad overflow crea un BFC si su valor es diferente al inicial (visible)
+•	Una característica de BFC es que contiene flotantes
+¿Qué más crea un BFC?
+•	Utilizar position: absolute o position: fixed
+•	El uso de
+•	display: inline-block
+•	display: table-cell
+•	display: table-caption
+________________________________________
+Flexbox y Grid
+•	Ambos formatos nacieron con la intensión de facilitar el diseño de la página
+Flexbox y CSS Grid también crean algo así como un BFC, excepto que se describen como:
+Flexbox
+•	Contexto de formato flexible ⇒ El elemento está participando en un diseño flexible
+•	Se basa en un formato donde se le da flexibilidad a los elementos y al contenedor
+CSS Grid
+•	Contexto de formato de cuadricula ⇒ El elemento está participando en un diseño de cuadricula
+•	Adquiere un formato de cuadricula realmente fácil de ordenar
+________________________________________
+•	display: inline-block crea un BFC y su hermano display: flow-root
+•	display: inline-block ⇒ Da un BFC en una caja en línea
+•	Consta en una fusión de ambas partes, donde al igual que inline-flex e inline-block, externamente el elemento se sitúa de forma inline, pero por dentro puede adoptar propiedades block como width, left, etc…
+•	display: flow-root ⇒ Da un BFC en una caja de bloque
+•	Permite posicionar correctamente los elementos float (que, al ser float, se descolocan del flujo, y al resetearlo lo vuelve a ubicar) esto es genial para casos donde tienes que usar elementos flotantes y no quieres que se te desordene toda la caja
+•	Todo lo trabajamos bajo los conceptos de block e inline y se explica el diseño de CSS bajo estos dos conceptos
+ 
+•	Podemos controlar el tipo de cuadro que se genera utilizando la propiedad display
+RESUMEN: BFC (Block Formatting Context) es un pequeño layout el cual esta aparte de todo el documento. Este mismo se puede generar a partir de la propiedad position, pero cada una tiene su característica de manejar el contexto de formato. Diferentes elementos tienen su contexto de bloque
