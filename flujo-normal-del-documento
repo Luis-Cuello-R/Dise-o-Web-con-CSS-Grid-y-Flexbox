@@ -1,0 +1,33 @@
+Flujo normal del documento: Display block, inline e inline-block
+Ideas/conceptos claves
+Display ⇒ Verbo: desplegar, colocar a la vista, exhibir, lucir, mostrar, presentar
+flujo normal del documento ⇒ como se comportan los elementos HTML por defecto
+Apuntes
+•	Display ⇒ Definir el tipo de visualización de un elemento
+•	Cuando usamos display: flex; o display: grid; Nos centramos más en los valores y no en la propiedad por si sola
+Block and Inline elements
+•	Block ⇒ Se extienden ocupando todo el espacio disponible para ellos
+•	Inline
+•	Son como palabras en una oración, una después de otra
+•	Se separan por medio de un espacio en blanco entre ellos
+El comportamiento de los elementos en bloque y en línea es fundamental para CSS y el hecho de que un documento HTML marcado correctamente será legible por defecto. Este diseño se conoce como "Diseño de bloque y en línea" o "Flujo normal" porque esta es la forma en que los elementos se presentan si no les hacemos nada más.
+Inner y Outer
+•	Block e Inline definen:
+•	Valor externo de visualización
+•	Valor interno de visualización
+•	Lo que significa es que cuando usamos display: grid; estamos diciendo display: block-grid;
+•	Un elemento que tenga los atributos de bloque puede establecer:
+•	Ancho
+•	Alto
+•	Padding
+•	Margin
+•	Estirarse en todo el espacio
+•	Pero los hijos de un contenedor display: grid; se les ha dado un valor interno de grid
+•	Esta forma de pensar es util porque cuando usamos display: inline-flex;
+•	Pensaremos que el primer valor es el comportamiento externo y el segundo valor es el interno del contenedor
+•	Siempre volveremos al flujo normal del documento
+•	Si trabajamos de esta forma obtendremos:
+•	Flujo más agradable y legible
+•	CSS mucho más fácil
+•	Menos probable de tener problemas de accesibilidad (ya que está trabajando con el orden de los documentos que es exactamente lo que está haciendo un lector de pantalla o una persona que revisa el documento)
+RESUMEN: El flujo normal del documento sera la forma en que se mostraran los elementos si no modificamos nada, se basan en block e inline ambas propiedades se usan a lo largo del desarrollo como cuando usamos display: grid; o display: inline-grid; estarás marcando de alguna forma si el comportamiento externo es de bloque o en línea además que en la segunda propiedad indicas que comportamiento interno tendrá.
