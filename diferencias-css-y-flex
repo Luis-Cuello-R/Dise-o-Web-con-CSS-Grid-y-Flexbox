@@ -1,0 +1,9 @@
+Diferencias entre Flexbox y CSS Grid
+Apuntes
+•	Flexbox
+•	Es un método que puede ayudar a distribuir el espacio entre los ítems de una interfaz y mejorar las capacidades de alineación
+•	Es unidimensional ⇒ Una sola dirección
+•	CSS Grid
+•	Es un sistema de diseño que permite al autor alinear elementos en columnas y filas
+•	Es bidimensional
+RESUMEN: La principal diferencia entre flexbox y Grid es la capacidad de dimensiones que cuenta cada uno flexbox es unidimensional y CSS Grid es bidimensional
