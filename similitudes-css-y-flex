@@ -1,0 +1,21 @@
+Similitudes entre Flexbox y CSS Grid
+Apuntes
+•	Flexbox y CSS Grid tienen 2 similitudes:
+1.	Relaciones Padres e hijos inmediatos
+2.	Ejes de alineamiento
+Relaciones Padres e hijos inmediatos
+•	Tantos los padres tienen hijos, pero los hijos también pueden ser padres
+•	Si se define correctamente que contenedores serán padre, hijos o ambos entonces sera más sencillo definir la técnica
+•	Segun a eso tendremos propiedades para
+•	Padres
+•	Hijos
+Ejes de alineamiento
+•	CSS siempre tienen dos axis o ejes
+1.	Justify
+•	inline axis (row axis)
+2.	Align
+•	Block axis (column axis)
+•	Las propiedades tienen un inicio (start) y un final (end)
+•	Por defecto de izquierda a derecha para inline
+•	Por defecto de arriba a abajo para block
+RESUMEN: Flexbox y CSS Grid comparten dos características las relaciones padre e hijo y los ejes de alineamiento que tiene cada una
