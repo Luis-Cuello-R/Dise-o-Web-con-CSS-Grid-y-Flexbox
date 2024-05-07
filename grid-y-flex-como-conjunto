@@ -1,0 +1,7 @@
+¿Puedo trabajar con Flexbox y CSS Grid al tiempo?
+•	¿Puedo trabajar con Flexbox y CSS Grid al tiempo?
+•	Si
+•	Pero va a depender del diseño que tengamos o necesitemos
+•	por ejemplo, esta pantalla, si identificamos los elementos 
+•	Podremos observar que necesitaremos un contenedor 
+•	Este contenedor tendrá hijos, los cuales podemos definir por dentro con flexbox 
